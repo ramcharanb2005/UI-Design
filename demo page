@@ -1,0 +1,34 @@
+import 'package:flutter/material.dart';
+
+void main(){
+  runApp(const xyz());
+}
+class xyz extends StatelessWidget{
+  const xyz({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: "MyDeno",
+      home: Index(),
+    );
+  }
+}
+class Index extends StatefulWidget{
+  const Index({super.key});
+  @override
+  State<Index> createState() => IndexState();
+}
+class IndexState extends State<Index>{
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Demopage"),
+        backgroundColor: Colors.cyan,
+      ),
+      body: Center(
+        child: Text("Hello"),
+      ),
+    );
+  }
+}
